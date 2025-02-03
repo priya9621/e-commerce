@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+     <script src="./jquery.js"></script>
+    <script>
+      $(function(){
+        $('#btnSlideUp').click(function(){
+           $('#div').slideUp();
+        })
+        $('#btnSlideDown').click(function(){
+           $('#div').slideDown();
+        })
+        $('#btnSlideToggle').click(function(){
+           $('#div').slideToggle();
+        })
+        $('#btnHide').click(function(){
+           $('#div').hide();
+        })
+        $('#btnShow').click(function(){
+           $('#div').show();
+        })
+        $('#btnShowHideToggle').click(function(){
+           $('#div').toggle();
+        })
+        $('#btnFadeIn').click(function(){
+           $('#div').fadeIn(1000);
+        })
+        $('#btnFadeOut').click(function(){
+           $('#div').fadeOut(1000);
+        })
+        $('#btnFadeToggle').click(function(){
+           $('#div').fadeToggle(1000);
+        })
+      })
+        // $(document).ready(function(){
+        //     alert("Test");
+        // });
+
+    </script>
+</head>
+<body>
+    <div id="div" style="background-color: red;width:200px; height:200px"></div>
+    <br/>
+    <input type="submit" id="btnSlideUp" value="SlideUp"/> 
+    <input type="submit" id="btnSlideDown" value="SlideDown"/>
+    <input type="submit" id="btnSlideToggle" value="SlideUp/SlideDown"/>
+    <input type="submit" id="btnHide" value="Hide"/>
+    <input type="submit" id="btnShow" value="Show"/> 
+    <input type="submit" id="btnShowHideToggle" value="Hide/Show"/>
+    <input type="submit" id="btnFadeIn" value="FadeIn"/>
+    <input type="submit" id="btnFadeOut" value="FadeOut"/> 
+    <input type="submit" id="btnFadeToggle" value="FadeIn/FadeOut"/>
+</body>
+</html>
